@@ -34,7 +34,7 @@ A sleek and modern landing page showcasing elite operatives, operations strategy
 ## 🚀 Live Demo
 
 Try it here 👇  
-https://zeddy-forreal.github.io/kurogane-protocol
+https://zeddy-forreal.github.io/Kurogane-Protocol
 
 ## 📸 Preview
 
@@ -43,7 +43,7 @@ https://zeddy-forreal.github.io/kurogane-protocol
 ## 📁 How to Run Locally
 
 ```bash
-git clone https://github.com/Zeddy-Forreal/kurogane-protocol-website.git
-cd kurogane-protocol-website
+git clone https://github.com/Zeddy-Forreal/Kurogane-Protocol.git
+cd Kurogane-Protocol
 # Then open index.html in your browser
 
