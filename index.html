@@ -4,177 +4,262 @@
     <title>Kurogane Protocol</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <link rel="stylesheet" href="style/webfonts/all.min.css">
-    <link rel="stylesheet" href="style/webfonts/fontawesome.min.css">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="static/Font/font.css">
-    <link rel="icon" href="static/ST_brand/icon.png">
-</head>
+    <link rel="icon" href="static/icon.png">
 
 <body>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-        <div class="bg"></div>
-        <div class="bg2"></div>
+<!-- ─── SVG ICON SPRITES ─── -->
+<svg width="0" height="0" style="position:absolute">
+    <defs>
+        <symbol id="ic-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="12" cy="12" r="9"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+            <path d="M12 1v3M12 20v3M1 12h3M20 12h3"/>
+        </symbol>
+        <symbol id="ic-knight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 21h11"/>
+            <path d="M8 21l.5-4 1.5-2-3-3 1-5c.5-2 2-4 5-4 2 1 3 3 2.5 5l-1 3 2 2-1 6"/>
+            <circle cx="14" cy="5.5" r="0.6" fill="currentColor"/>
+        </symbol>
+        <symbol id="ic-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+        </symbol>
+        <symbol id="ic-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 4h-2a4 4 0 0 0-4 4v3H7v3h2v6h3v-6h2.5l.5-3H12V8a1 1 0 0 1 1-1h2V4z"/>
+        </symbol>
+        <symbol id="ic-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="1.5"/>
+            <path d="M3 6.5l9 6.5 9-6.5"/>
+        </symbol>
+        <symbol id="ic-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="9" width="4" height="11"/>
+            <circle cx="5" cy="5" r="1.8" fill="currentColor" stroke="none"/>
+            <path d="M11 20v-7a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v7"/>
+            <path d="M11 13.5v6.5"/>
+        </symbol>
+        <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 4h3l1.5 4.5L7.5 10a11 11 0 0 0 6.5 6.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>
+        </symbol>
+    </defs>
+</svg>
 
-        <div class="logo">
-            <p>
-                <span>K</span><span>U</span><span>r</span><span>o</span><span>g</span><span>a</span><span>n</span><span>e</span>
-            </p>
-            <p>
+<!-- ─── HOME ─── -->
+<section class="home" id="home">
+    <div class="home-bg"></div>
+
+    <nav class="home-nav">
+        <span class="home-nav-id">KGN — PROTOCOL // ACTIVE</span>
+        <span class="home-nav-coords">35.6762° N, 139.6503° E</span>
+    </nav>
+
+    <div class="home-center">
+        <div class="logo-block">
+            <div class="logo-line">
+                <span>K</span><span>U</span><span>R</span><span>O</span><span>G</span><span>A</span><span>N</span><span>E</span>
+            </div>
+            <div class="logo-line">
                 <span>P</span><span>R</span><span>O</span><span>T</span><span>O</span><span>C</span><span>O</span><span>L</span><span>E</span>
-            </p>
+            </div>
         </div>
+        <div class="home-divider"></div>
+        <p class="home-tagline">
+            <strong>Elite Operatives.</strong> Zero Mistakes.<br>
+            Behind every perfect operation lies a team built on discipline, strategy, and unbreakable trust.
+        </p>
+    </div>
 
-        <div class="intro">
-            <h2 class="Sp">Elite Operatives</h2>
-            <h2>Zero Mistakes</h2>
-            <h4>
-                Behind every perfect operation lies a team built on 
-                <span>discipline</span>, <span>strategy</span>, and <span>unbreakable trust</span>.
-                The Division stands not for fame, but for <span>flawless execution</span> and 
-                <span>timing beyond compare</span>.
-            </h4>
-            <button>LEARN MORE</button>
+    <div class="home-bottom">
+        <p class="home-desc">
+            The Division stands not for fame, but for <span>flawless execution</span> and 
+            <span>timing beyond compare</span>. We operate in silence and deliver with precision.
+        </p>
+        <div class="home-cta">
+            <button class="cta-btn cta-btn-primary">LEARN MORE</button>
+            <button class="cta-btn cta-btn-ghost">VIEW DOSSIERS</button>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- FEATURES + MEMBERS -->
-    <section class="cards" id="cards">
+<!-- ─── OPERATIONS COMMAND ─── -->
+<section class="cards" id="cards">
+    <div class="cards-inner">
 
-        <h2>Operations <span>Command</span></h2>
+        <div class="section-eyebrow">Operations Command</div>
+        <h2>Mission <span>Directives</span></h2>
 
         <div class="features">
             <div class="feature">
-                <span>i</span>
-                <i class="fa-regular fa-bullseye-arrow"></i>
-                <p>Precision</p>
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium earum voluptatem id fugit iste.</h5>
+                <span class="feature-stamp">01</span>
+                <div class="feature-icon"><svg><use href="#ic-target"/></svg></div>
+                <p class="feature-name">Precision</p>
+                <h5>Every variable calculated. Every contingency planned. Precision is not a target — it is the baseline from which all operations begin.</h5>
+                <div class="feature-redacted">
+                    <div class="redact"></div>
+                    <div class="redact"></div>
+                    <div class="redact"></div>
+                </div>
             </div>
 
             <div class="feature">
-                <span>ii</span>
-                <i class="fa-regular fa-chess-knight"></i>
-                <p>Strategy</p>
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium earum voluptatem id fugit iste.</h5>
+                <span class="feature-stamp">02</span>
+                <div class="feature-icon"><svg><use href="#ic-knight"/></svg></div>
+                <p class="feature-name">Strategy</p>
+                <h5>Situations read before they unfold. Outcomes mapped before deployment. Strategy is what separates those who survive from those who prevail.</h5>
+                <div class="feature-redacted">
+                    <div class="redact"></div>
+                    <div class="redact"></div>
+                    <div class="redact"></div>
+                </div>
             </div>
 
             <div class="feature">
-                <span>iii</span>
-                <i class="fa-regular fa-bolt"></i>
-                <p>Efficiency</p>
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium earum voluptatem id fugit iste.</h5>
+                <span class="feature-stamp">03</span>
+                <div class="feature-icon"><svg><use href="#ic-bolt"/></svg></div>
+                <p class="feature-name">Efficiency</p>
+                <h5>No wasted motion. No redundant effort. Maximum impact at minimum exposure — the mark of a unit that has mastered the art of silence.</h5>
+                <div class="feature-redacted">
+                    <div class="redact"></div>
+                    <div class="redact"></div>
+                    <div class="redact"></div>
+                </div>
             </div>
         </div>
 
-        <main>
+        <main id="cardMain">
 
-            <div class="card" style="background-image: url(media/img_1.jpg);">
+            <div class="card" style="background-image:url(media/img_1.jpg);">
+                <div class="card-tag">
+                    <span class="card-tag-id">FILE_001</span>
+                    <span class="card-tag-dot"></span>
+                </div>
                 <div class="socials">
-                    <p>Riku Hayato</p>
+                    <div class="socials-name-row">
+                        <p>Riku Hayato</p>
+                        
+                    </div>
                     <p class="title">Operations Strategist</p>
+                    <div class="socials-divider"></div>
                     <nav>
-                        <a><i class="fa-brands fa-facebook-f"></i></a>
-                        <a><i class="fa-solid fa-envelope"></i></a>
-                        <a><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><svg><use href="#ic-fb"/></svg></a>
+                        <a href="#"><svg><use href="#ic-mail"/></svg></a>
+                        <a href="#"><svg><use href="#ic-linkedin"/></svg></a>
+                        <a href="#"><svg><use href="#ic-phone"/></svg></a>
                     </nav>
                 </div>
             </div>
 
-            <div class="card" style="background-image: url(media/img_2.jpg);">
+            <div class="card" style="background-image:url(media/img_2.jpg);">
+                <div class="card-tag">
+                    <span class="card-tag-id">FILE_002</span>
+                    <span class="card-tag-dot"></span>
+                </div>
                 <div class="socials">
-                    <p>Luna Akechi</p>
+                    <div class="socials-name-row">
+                        <p>Luna Akechi</p>
+                    </div>
                     <p class="title">Precision Specialist</p>
+                    <div class="socials-divider"></div>
                     <nav>
-                        <a><i class="fa-brands fa-facebook-f"></i></a>
-                        <a><i class="fa-solid fa-envelope"></i></a>
-                        <a><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><svg><use href="#ic-fb"/></svg></a>
+                        <a href="#"><svg><use href="#ic-mail"/></svg></a>
+                        <a href="#"><svg><use href="#ic-linkedin"/></svg></a>
+                        <a href="#"><svg><use href="#ic-phone"/></svg></a>
                     </nav>
                 </div>
             </div>
 
-            <div class="card" style="background-image: url(media/img_3.jpg);">
+            <div class="card" style="background-image:url(media/img_3.jpg);">
+                <div class="card-tag">
+                    <span class="card-tag-id">FILE_003</span>
+                    <span class="card-tag-dot"></span>
+                </div>
                 <div class="socials">
-                    <p>Daiki Arasaka</p>
+                    <div class="socials-name-row">
+                        <p>Daiki Arasaka</p>
+                    </div>
                     <p class="title">Infiltration Analyst</p>
+                    <div class="socials-divider"></div>
                     <nav>
-                        <a><i class="fa-brands fa-facebook-f"></i></a>
-                        <a><i class="fa-solid fa-envelope"></i></a>
-                        <a><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><svg><use href="#ic-fb"/></svg></a>
+                        <a href="#"><svg><use href="#ic-mail"/></svg></a>
+                        <a href="#"><svg><use href="#ic-linkedin"/></svg></a>
+                        <a href="#"><svg><use href="#ic-phone"/></svg></a>
                     </nav>
                 </div>
             </div>
 
-            <div class="card" style="background-image: url(media/img_4.jpg);">
+            <div class="card" style="background-image:url(media/img_4.jpg);">
+                <div class="card-tag">
+                    <span class="card-tag-id">FILE_004</span>
+                    <span class="card-tag-dot"></span>
+                </div>
                 <div class="socials">
-                    <p>Rina Takashiro</p>
+                    <div class="socials-name-row">
+                        <p>Rina Takashiro</p>
+                    </div>
                     <p class="title">Systems Architect</p>
+                    <div class="socials-divider"></div>
                     <nav>
-                        <a><i class="fa-brands fa-facebook-f"></i></a>
-                        <a><i class="fa-solid fa-envelope"></i></a>
-                        <a><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><svg><use href="#ic-fb"/></svg></a>
+                        <a href="#"><svg><use href="#ic-mail"/></svg></a>
+                        <a href="#"><svg><use href="#ic-linkedin"/></svg></a>
+                        <a href="#"><svg><use href="#ic-phone"/></svg></a>
                     </nav>
                 </div>
             </div>
 
         </main>
-    </section>
+
+    </div>
+</section>
 
 
-    <!-- FOOTER -->
-    <footer class="footer">
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+    <div class="footer-inner">
 
-        <div class="footerinner">
+        <div class="brand-col">
+            <div class="footer-logo">Kurogane Protocol</div>
+            <p class="footer-mission">We operate in silence and deliver with precision. Every mission is planned, executed, and closed without a trace.</p>
+            <p class="footer-tagline">// FORGED IN SILENCE. MOVING IN SHADOWS. DELIVERING EXCELLENCE.</p>
 
-            <div class="columns">
+        </div>
 
-                <div class="brand col">
-                    <h3 class="logo">Kurogane Protocol</h3>
-                    <p class="mission">We operate in silence and deliver with precision. Every mission is planned, executed, and closed without a trace.</p>
-                    <p class="tagline">Forged in silence. Moving in shadows. Delivering excellence.</p>
-                </div>
+        <div class="footer-hr"></div>
 
-                <hr>
-
-                <div class="col news">
-                    <h4 class="title">Stay Informed</h4>
-
-                    <form class="newsletter">
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="text" placeholder="Name" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-
-                    <div class="newsletter">
-                        <p>contact@divisioneclipse.io</p>
-                        <p>+0X XX XXXX XX78</p>
-                        <p>Tokyo, Japan</p>
-                    </div>
-                </div>
-
+        <div class="news-col">
+            <div class="col-label">// Stay Informed</div>
+            <div class="newsletter">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Name">
+                <button type="button">Subscribe</button>
+            </div>
+                        <div class="footer-contacts">
+                <p>contact@divisioneclipse.io</p>
+                <p>+0X XX XXXX XX78</p>
+                <p>Tokyo, Japan</p>
             </div>
         </div>
 
-        <div class="footerbottom">
-            <div class="bottomleft">© 2025 Division Eclipse — All rights reserved.</div>
-            <div class="bottomright">
-                <a href="#">Privacy Policy</a>
-                <span>•</span>
-                <a href="#">Terms</a>
-                <span>•</span>
-                <a href="#">Support</a>
-            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>© 2025 Division Eclipse — All rights reserved.</div>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Terms</a>
+            <span>•</span>
+            <a href="#">Support</a>
         </div>
+    </div>
+</footer>
 
-    </footer>
+<script src="script/main.js">
 
-    <script src="javascript/main.js"></script>
+</script>
 </body>
 </html>
